@@ -9,18 +9,46 @@
 main {
   overflow: auto;
   padding: 4rem;
-
-  &.main-container {
-    max-width: 33rem;
-    margin-left: auto; /*joga para esquerdao conteudo*/
-  }
 }
+main .main-container {
+  max-width: 33rem;
+  margin-left: auto; /*joga para esquerdao conteudo*/
+}
+/*revisar*/
+.main-container .back {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main-container .h1 {
+  font: 600 1.5rem/1.25 var(--font-family);
+  margin-bottom: 0.5rem;
+}
+
+/* .main-container p {
+  font: 300 1.25rem/1.25 var(--font-family);
+} */
 
 aside {
   background-color: var(--surface-secondary);
   padding: 4rem;
+}
 
-  & .aside-container {
-    max-width: 31rem;
-  }
+aside .aside-container {
+  max-width: 31rem;
+}
+
+.aside-container .img {
+  margin-top: 2rem;
+}
+
+.aside-container h2 {
+  font: 600 2.5rem/1.25 var(--font-family);
+  margin-bottom: 0.5rem;
+}
+
+.aside-container span {
+  color: var(--text-highlight);
 }
