@@ -6,14 +6,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estrela do amanhã</title>
-    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
-    <!------------Primeira pagina ----------------------->
+    <!------------Pate Superior Titulos ----------------------->
 
     <div id="app">
       <main>
@@ -30,7 +31,7 @@
           </p>
           <!------------Formulario--------------->
 
-          <form action="" method="post" enctype="multipart/form-data">
+          <form  method="post" enctype="multipart/form-data">
             <fieldset class="child-info">
                 <legend>Informações da criança</legend>
 
@@ -41,25 +42,26 @@
                           id="fullname"
                           name="fullname" 
                           type="text" 
-                          placeholder="Qual o nome da criança">
+                          placeholder="Qual o nome da criança"
+                        >
                         </input>
                 </div>
                   
                 <div class="input-wrapper">
                   <label for="birth">Data de nascimento</label>
-                      <input 
-                        id="birth" 
-                        name="birth"
-                        type="date" 
-                        lang="pt-BR">
-                      </input>
-              </div>
+                  <input 
+                    type="date" 
+                    id="birth"
+                    name="birth" 
+                    lang="pt-BR"
+                  >
+                </div>
 
               <div class="select-wrapper">
                 <label for="gender">sexo</label>
-                    <select 
-                      name="gender"
-                      id="gender">
+                    <select
+                      id="gender"
+                      name="gender">
                       <option value="female">Feminino</option>
                       <option value="male">Masculino</option>
                       <option value="other">Outro</option> 
@@ -67,26 +69,33 @@
               </div>
 
               <div class="textarea-wrapper">
-                <label for="medical-info">Informações médicas</label>
-                    <textarea 
-                      id="medical-info"
-                      name="medical-info"
-                      cols="30"
-                      rows="10"
-                      placeholder="Informações médicas importantes">
-                    </textarea>
+                <label for="medical-info">Digite as informações médicas</label>
+                <textarea
+                  name="medical-info" 
+                  id="medical-info"
+                  cols="30"
+                  rows="5"
+                  placeholder="Informações importantes do médico" 
+                  >
+                </textarea>
               </div>
-
+<!----------------------ARRASTAR IMAGENS --------------------------------------------->
               <div class="droparea-wrapper">
-                <input 
-                  type="file"
-                  id="birth-file"
-                  name="birth-file">
-                  <img src="./icons/cloud-upload.svg" alt="">
-                  <p>
-                    Clique aqui para <br>
-                    selecionar os arquivos
-                  </p>
+
+                <label for="birth-file">Certidão de Nascimento</label>
+
+                <div class="dropzone"> 
+                  <input 
+                    type="file"
+                    id="birth-file"
+                    name="birth-file">
+                    <img src="./icons/cloud-upload.svg" alt="" >
+                    <p>
+                      Clique aqui para <br>
+                      selecionar os arquivos
+                    </p>
+                </div>
+                
               </div>
             </fieldset>
           
@@ -95,14 +104,16 @@
         </div>
       </main>
 
-      <!------------Segunda pagina ----------------------->
+
+
+      <!------------Segunda pagina Titulos ----------------------->
 
       <aside>
         <div class="aside-container">
           <header>
             <img src="assets/logo.svg" alt="Logo estrela do amanhã" />
             <h2>
-              Porque cada momento de
+              Porque cada momento <br> de
               <span>aprendizado </span>
               conta
             </h2>
@@ -111,7 +122,7 @@
               ambiente acolhedor, seguro e estimulante.
             </p>
           </header>
-
+<!-------------Ilustração de uma professora ------------------>
           <img
             src="assets/Illustration.svg"
             alt="Ilustração de uma professora com criança~prestando atenção"

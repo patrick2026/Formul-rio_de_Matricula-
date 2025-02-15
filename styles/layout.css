@@ -1,7 +1,7 @@
 #app {
   display: grid;
   grid-template-columns: 51.25% 48.75%;
-  height: 100vh;
+  height: 100vh; /*toda parte visivel*/
   overflow: hidden; /*nunca vai ter rolagem, e transbordamento */
 }
 
@@ -9,46 +9,45 @@
 main {
   overflow: auto;
   padding: 4rem;
-}
-main .main-container {
-  max-width: 33rem;
-  margin-left: auto; /*joga para esquerda o conteudo*/
-}
-/*revisar*/
-.main-container .back {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
-}
+  & .main-container {
+    max-width: 33rem;
+    margin-left: auto; /*joga para esquerda o conteudo*/
+  }
+  /*revisar*/
+  & .back {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1.5rem;
+  }
+  & .h1 {
+    font: 600 1.5rem/1.25 var(--font-family);
+    padding-bottom: 10.5rem;
+  }
 
-.main-container .h1 {
-  font: 600 1.5rem/1.25 var(--font-family);
-  margin-bottom: 0.5rem;
+  & p {
+    font: 400 1rem/1.5 var(--font-family);
+    padding-top: 0.5rem;
+  }
 }
-
-/* .main-container p {
-  font: 300 1.25rem/1.25 var(--font-family);
-} */
 
 aside {
   background-color: var(--surface-secondary);
   padding: 4rem;
-}
 
-aside .aside-container {
-  max-width: 31rem;
-}
+  &.aside-container {
+    max-width: 31rem;
 
-.aside-container .img {
-  margin-top: 2rem;
-}
+    aside > & img {
+      padding-top: 2rem;
+    }
+  }
+  & h2 {
+    font: 600 2.5rem/1.25 var(--font-family);
+    padding-bottom: 0.5rem;
 
-.aside-container h2 {
-  font: 600 2.5rem/1.25 var(--font-family);
-  margin-bottom: 0.5rem;
-}
-
-.aside-container span {
-  color: var(--text-highlight);
+    & span {
+      color: var(--text-highlight);
+    }
+  }
 }
