@@ -12,7 +12,7 @@ main {
 }
 main .main-container {
   max-width: 33rem;
-  margin-left: auto; /*joga para esquerdao conteudo*/
+  margin-left: auto; /*joga para esquerda o conteudo*/
 }
 /*revisar*/
 .main-container .back {
