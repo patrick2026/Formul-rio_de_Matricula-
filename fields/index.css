@@ -59,3 +59,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 select {
   background: url("/icons/arrow-down-01.svg") no-repeat right 1rem center;
 }
+
+.input-wrapper:has(input[disabled]) {
+  opacity: 0.5;
+}
+
+.input-wrapper {
+  & [disabled] {
+    background-color: #e7e5e4;
+    border: 1px sold var(--stroke-default);
+    color: var(--text-primary);
+  }
+}

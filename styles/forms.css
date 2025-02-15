@@ -13,5 +13,15 @@ fieldset {
 
 legend {
   font: 600 1rem/1.25 var(--font-family);
-  margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.title {
+  font: 600 1rem/1.25 var(--font-family);
+  padding-top: 3rem;
+}
+
+fieldset + fieldset {
+  padding-top: 2rem;
 }

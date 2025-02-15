@@ -37,3 +37,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Aplica o modelo Flexbox */
+.flex {
+  display: flex;
+  gap: 1.25rem; /* Espaçamento entre os elementos */
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column; /* Para os rótulos e inputs ficarem em uma coluna */
+}
+
+.flex-1 {
+  flex: 1; /* Ocupa 1 parte do espaço disponível */
+}
+
+.flex-2 {
+  flex: 2; /* Ocupa 2 partes do espaço disponível */
+}
