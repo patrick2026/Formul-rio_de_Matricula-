@@ -42,8 +42,7 @@
                           id="fullname"
                           name="fullname" 
                           type="text" 
-                          placeholder="Qual o nome da criança"
-                        >
+                          placeholder="Qual o nome da criança">
                         </input>
                 </div>
                   
@@ -164,7 +163,51 @@
 
 
             </fieldset>
+            <fieldset class="gardian">
+              <legend>Informações do responsável</legend>
 
+              <div class="input-wrapper">
+                <label for="gardian">Nome do Responsável </label>
+                <input
+                  type="text"
+                  id="gardian"
+                  name="gardian"/>
+                  <small>Principal responsável legal e contato de emergência</small>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="phone">Telefone</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  placeholder="(XX) XXXXX-XXXX" 
+                  maxlength="15" 
+                  oninput="formatPhone(this)" 
+                  required
+                />
+              </div>
+
+              <!-- Campo de E-mail -->
+              <div class="input-wrapper  ">
+                  <label for="email">Email</label>
+                    <input 
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="seu email@exemplo.com"
+                      oninput="validateEmail(this)"
+                      pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                      required/>
+                  <div class="error">
+                    <img src="./icons/alert-circle.svg" alt="ícone de alerta vermelho">
+                      <small  id="emailError" style="color: red; display: none;">Email inválido</small>
+                      <span>Insira um e-mail valido</span>  
+                  </div>
+
+              </div>
+
+            </fieldset>
 
           </form>
         </div>
@@ -196,5 +239,6 @@
         </div>
       </aside>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
