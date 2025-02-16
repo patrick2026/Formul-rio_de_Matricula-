@@ -5,10 +5,43 @@ label + .radio-wrapper {
 }
 
 /*configuração das imagens das caixas (grid)*/
-.radio-wrapper {
+/* Estilo padrão para .radio-wrapper-um */
+.radio-wrapper-um {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+  grid-template-columns: repeat(2, 15.9rem);
   gap: 1rem;
+}
+
+/* Estilo padrão para #radio-wrapper */
+#radio-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 2fr));
+  gap: 1rem;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .radio-wrapper-um {
+    grid-template-columns: 1fr; /* Passa para 1 coluna */
+  }
+
+  #radio-wrapper {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(7.5rem, 1fr)
+    ); /* Ajusta o tamanho mínimo */
+  }
+}
+
+/* Responsividade para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+  .radio-wrapper-um {
+    grid-template-columns: 1fr; /* Mantém uma única coluna */
+  }
+
+  #radio-wrapper {
+    grid-template-columns: 1fr; /* Fica apenas uma coluna */
+  }
 }
 
 /*Estilização das duas primeiras imagens*/

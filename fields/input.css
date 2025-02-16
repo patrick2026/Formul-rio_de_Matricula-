@@ -89,3 +89,43 @@ select {
 .input-wrapper .email-input:valid + .error {
   display: none;
 }
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+/* Telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+  input,
+  textarea,
+  select {
+    padding: 0.5rem 1rem; /* Ajuste do padding para tela menor */
+  }
+
+  label {
+    font-size: 0.875rem; /* Ajuste do tamanho da fonte */
+  }
+
+  .input-wrapper {
+    margin-bottom: 1.5rem; /* Espaçamento maior entre os campos */
+  }
+
+  .input-wrapper .info {
+    margin-top: 1rem; /* Ajuste do espaçamento */
+  }
+}
+
+/* Telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+  input,
+  textarea,
+  select {
+    padding: 0.5rem; /* Diminui o padding para melhor ajuste */
+  }
+
+  label {
+    font-size: 0.75rem; /* Reduz o tamanho da fonte */
+  }
+
+  .input-wrapper .info {
+    margin-top: 0.75rem; /* Ajuste do espaçamento */
+  }
+}

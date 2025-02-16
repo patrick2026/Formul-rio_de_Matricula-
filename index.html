@@ -205,13 +205,14 @@
                   </div>
               </div>
             </fieldset>
-<!-----------------------Opções de matrículas 4 turnos  -------------------------------->
-            <fieldset class="gardian">
-              <legend>Opções de matrículas</legend>
-          <!------------primeiro turno------------------>
+<!---------------------------OPÇÕES DE MATRICULAS------------------------------->
+            <!------------primeiro turno------------------>
+              <fieldset class="gardian">
+                <legend>Opções de matrículas</legend>
+            
               <div class="input-wrapper">
                 <label>Selicione o turno de estudo</label>
-                <div class="radio-wrapper">
+                <div class="radio-wrapper-um">
                   <div class="radio-inner">
                     <div class="radio-image"></div>
                       <input
@@ -223,6 +224,9 @@
                       <img src="./icons/sun-cloud-02.svg" alt="ìcone de sol com nuvem">
                       <label for="morning">Manhã</label>  
                   </div>
+                  
+                  
+
               <!------------segundo turno------------------>
                   <div class="radio-inner">
                     <div class="radio-image"></div>
@@ -235,9 +239,65 @@
                       <img src="./icons/sun-02.svg" alt="ìcone de sol ">
                       <label for="evening">Tarde</label>  
                   </div>
+                </div>
+                </div>
+              
 
+<!------------------------------------esportes--------------------------------->
+              <div class="input-wrapper">
+                <label>Em qual esporte você gostaria de inscrever seu filho?</label>
+              
+                <div id="radio-wrapper">
+                  <!-- Futebol -->
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" id="football" name="sport" />
+                    <img src="./icons/football.svg" alt="Ícone de futebol" />
+                    <label for="football">Futebol</label>
+                  </div>
+              
+                  <!-- Basquete -->
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" id="basketball" name="sport" />
+                    <img src="./icons/basketball-02.svg" alt="Ícone de basquete" />
+                    <label for="basketball">Basket</label>
+                  </div>
+              
+                  <!-- Natação -->
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" id="swimming" name="sport" />
+                    <img src="./icons/swimming.svg" alt="Ícone de natação" />
+                    <label for="swimming">Natação</label>
+                  </div>
+              
+                  <!-- yoga -->
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" id="yoga" name="sport" />
+                    <img src="./icons/yoga-02.svg" alt="Ícone de yoga" />
+                    <label for="yoga">Yoga</label>
+                  </div>
+              
+                  <!-- volei -->
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" id="volleyball" name="sport" />
+                    <img src="./icons/volleyball.svg" alt="Ícone de volleyball" />
+                    <label for="volleyball">volley</label>
+                  </div>
+              
+                  <!-- boxe -->
+                  <div class="radio-inner">
+                    <div class="radio-image"></div>
+                    <input type="radio" id="boxing" name="sport" />
+                    <img src="./icons/boxing-glove-01.svg" alt="Ícone de boxing" />
+                    <label for="Boxing">boxing</label>
+                  </div>
                 </div>
               </div>
+              
             </fieldset>
           </form>
         </div>

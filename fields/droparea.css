@@ -38,3 +38,35 @@
 .dropzone:hover img {
   content: url("../icons/cloud-upload_houver.svg"); /* Imagem ao passar o mouse */
 }
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+/* Telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+  .dropzone {
+    padding: 1.25rem 0.75rem; /* Ajuste no padding */
+  }
+
+  .dropzone img {
+    width: 50%; /* Reduz a largura da imagem */
+  }
+
+  p {
+    font-size: 0.875rem; /* Ajuste no tamanho da fonte */
+  }
+}
+
+/* Telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+  .dropzone {
+    padding: 1rem 0.5rem; /* Reduz ainda mais o padding */
+  }
+
+  .dropzone img {
+    width: 40%; /* Imagem ainda menor em dispositivos pequenos */
+  }
+
+  p {
+    font-size: 0.75rem; /* Fonte ainda menor para caber melhor na tela */
+  }
+}
