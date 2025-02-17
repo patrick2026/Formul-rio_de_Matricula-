@@ -34,3 +34,33 @@ button {
   outline: 0.25rem solid var(--surface-secondary);
   color: #e43a12;
 }
+
+/* Consultas de mídia para telas menores */
+@media screen and (max-width: 768px) {
+  .action-wrapper {
+    flex-direction: column; /* Coloca os botões empilhados verticalmente em telas pequenas */
+    align-items: center; /* Alinha os botões no centro */
+  }
+
+  button {
+    width: 100%; /* Faz os botões ocuparem toda a largura disponível */
+    margin-bottom: 1rem; /* Adiciona um espaço entre os botões */
+  }
+
+  /* Botões no modo vertical, para melhor visualização */
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+/* Consultas de mídia para telas maiores */
+@media screen and (min-width: 1024px) {
+  .action-wrapper {
+    gap: 2rem; /* Aumenta o espaço entre os botões em telas grandes */
+  }
+
+  button {
+    padding: 1rem 2rem; /* Aumenta o padding para telas grandes */
+  }
+}
