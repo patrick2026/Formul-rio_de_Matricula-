@@ -24,6 +24,7 @@
     flex: 0 0 1.5rem;
     height: 1.5rem;
     background-image: url("../icons/checkmark-padrao.svg");
+    background-repeat: no-repeat;
   }
   &:hover,
   &:focus-within {
@@ -33,5 +34,46 @@
   }
   &:has(:checked) .checkbox-image {
     background-image: url("../icons/checkmark-checked.svg");
+  }
+}
+
+/* Media Query para telas grandes (min-width: 1200px) */
+
+@media (min-width: 1200px) {
+  .terms-wrapper {
+    /* Aumenta o espaçamento entre os elementos para telas grandes */
+    gap: 1.5rem;
+  }
+
+  .checkbox-wrapper .checkbox-image {
+    flex: 0 0 2rem;
+    height: 2rem;
+  }
+}
+
+/* Media Query para tablets (min-width: 768px e max-width: 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .terms-wrapper {
+    /* Ajusta o gap para uma distância intermediária em tablets */
+    gap: 1rem;
+  }
+
+  .checkbox-wrapper .checkbox-image {
+    flex: 0 0 1.75rem;
+    height: 1.75rem;
+  }
+}
+
+/* Media Query para dispositivos móveis (max-width: 767px) */
+@media (max-width: 767px) {
+  .terms-wrapper {
+    /* Ajusta o layout para telas pequenas (coluna em vez de linha) */
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .checkbox-wrapper .checkbox-image {
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
   }
 }
